@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Oswald", serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    background-color: blue;
+    justify-content: space-around;
+    padding: 1rem 0;
+    align-items: center;
+    box-shadow: 5px 1px 20px black;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-logo{
+    color: #eeee;
+    font-weight: 600;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    margin: 0 8px;
+}
+
+.nav-link{
+    padding: 10px;
+    color: #eeee;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    background-color: red;
+    color: #eeee;
+}
+
+.header-toggle,
+ .header-close{
+    display: none;
+}
+
+/* home */
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .4rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+    border:.1rem solid #eeee;
+    color: #eeee;
+    cursor: pointer;
+    background: Blue;
+}
+
+.btn:hover{
+    background: orange;
+    color: #fff;
+}
+
+.home{
+    background-color: blue;
+    border: .2rem solid #eee;
+    height: 20rem;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+}
+.home .content{
+    width: 50%;
+    height: 20rem;
+}
+
+.home .content h3{
+    font-size: 1.5rem;
+    color: white;
+}
+.home .content p{
+    font-size: 1rem;
+    color: white;
+}
+
+.home-image{
+    width: 60%;
+    display: center;
+    padding: 2rem;
+}
+
+.home-image img{
+    width: 20rem;
+}
+
+/* process */
+
+.process {
+    text-align: center;
+    padding: 3.125rem 1.25rem;
+    background-color: #eeee;
+    border: .2rem solid black;
+    height: 27rem;
+}
+.process h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.process p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+.process .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.process .step {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+.process .step img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.process .step h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header{
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+    .logo a {
+        font-size: 0.9rem;
+    }
+    .logo img {
+        width: 30px;
+    }
+    .header-toggle{
+        display: inline;
+        color: #eeee;
+        font-size: 24px;
+    }
+    .header-close{
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+    }
+    
+    .header-close:hover{
+        background-color: red;
+        color: #eeee;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: blue;
+        color: #eeee;
+        width: 60%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 100;
+        transition: 0.5s ease;
+        border-radius: 0 0 0 50%;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-item{
+        margin: 2rem 0;
+    }
+    .show{
+        right: 0;
+    }
+
+
+    .btn{
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .1rem .5rem;
+        font-size: .7rem;
+        border-radius: 1.2rem;
+        border:.1rem solid #eeee;
+        color: #eeee;
+        cursor: pointer;
+        background: Blue;
+    }
+    
+    .btn:hover{
+        background: orange;
+        color: #fff;
+    }
+    
+
+
+    .home{
+        background-color: blue;
+        border: .1rem solid #eee;
+        height: 20rem;
+        width: 100%;
+        padding: 1rem;
+    }
+    .home .content h3{
+        font-size: 5vh;
+        color: white;
+    }
+    .home .content p{
+        font-size: 3vh;
+        color: white;
+    }
+    
+    .home-image img{
+        width: 15rem;
+    }
+    
+
+
+
+}
