@@ -232,6 +232,8 @@ header{
     .btn:hover{
         background: orange;
         color: #fff;
+        border-radius: 1.2rem;
+        border:.2rem solid #eeee;
     }
     
 
@@ -239,7 +241,7 @@ header{
     .home{
         background-color: blue;
         border: .1rem solid #eee;
-        height: 20rem;
+        height: 35rem;
         width: 100%;
         padding: 1rem;
     }
@@ -253,10 +255,18 @@ header{
     }
     
     .home-image img{
-        width: 15rem;
+        right: -20vw;
     }
     
 
+
+    .process {
+        text-align: center;
+        padding: 3.125rem 1.25rem;
+        background-color: #eeee;
+        border: .1rem solid black;
+        height: auto;
+    }
 
 
 }
